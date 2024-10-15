@@ -1,0 +1,70 @@
+.card {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    border: 1px solid grey;
+    border-radius: 10px;
+    
+}
+.card-title{
+    font-size: 25px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+p{
+    font-size: 18px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card-contenedor{
+    display: grid;
+    gap:1em;
+    
+}
+
+.title-cards-container{
+    background-color: black;
+    color: white;
+    padding: 1.2em .5em;
+    margin:0 ;
+    text-align: center;
+    
+}
+
+
+@media (min-width:720px){
+    .card-contenedor{
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .title-cards-container{
+        grid-column-start: 1;
+        grid-column-end:3;
+    }
+    .img-2{
+        grid-column-start:1;
+        grid-column-end:3;
+    }
+    
+}
+@media (min-width:992px){
+    .card-contenedor{
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+    .title-cards-container{
+    grid-column-start: 1;
+    grid-column-end:4;
+    }
+    .img-2{
+        grid-column-start:3;
+        grid-column-end: 4;
+    }
+}
+.card-img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
